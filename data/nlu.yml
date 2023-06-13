@@ -16,6 +16,17 @@ nlu:
 
 - intent: inform_stress_other
   examples: |
+    - [Laura](name) tem estado sob muita pressão no hospital.
+    - Tenho notado que [Lucas](name) está errando com frequência na dosagem de medicamentos no hospital.
+    - [Mariana](name) está enfrentando muita pressão no hospital.
+    - [Nathalia](name) tem expressado que está se sentindo sobrecarregada no hospital.
+    - [Pedro](name) tem estado lidando com muita pressão no hospital.
+    - Tenho notado que [Rafaela](name) tem cometido alguns erros em seu trabalho no hospital.
+    - [Sara](name) tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital.
+    - [Thiago](name) tem estado enfrentando muita pressão no hospital.
+    - [Vanessa](name) está lidando com muita pressão no hospital.
+    - [William](name) tem estado sob muita pressão no hospital.
+    
     - [Laura](name) tem estado sob muita pressão no hospital e isso tem levado a erros na medicação dos pacientes.
     - Tenho notado que [Lucas](name) está errando com frequência na dosagem de medicamentos no hospital.
     - [Mariana](name) está enfrentando muita pressão no hospital e isso tem levado a erros na documentação dos pacientes.
@@ -30,6 +41,17 @@ nlu:
 
 - intent: inform_self_stress
   examples: |
+    - Estou trabalhando em um ambiente muito estressante ultimamente.
+    - Sinto que estou enfrentando muitas demandas no trabalho.
+    - Tenho me sentido muito ansioso e estressado por causa das longas horas de trabalho no hospital.
+    - Acho que estou sofrendo de estresse acumulado por causa da rotina intensa de trabalho no hospital.
+    - Sinto que estou sobrecarregado com o grande número de pacientes e tarefas no hospital.
+    - Tenho notado que estou apresentando alguns sinais de estresse por causa do trabalho no hospital.
+    - Estou enfrentando muitas situações difíceis no trabalho no hospital.
+    - Preciso compartilhar com alguém que estou passando por uma fase estressante no ambiente hospitalar.
+    - Sinto que estou perdendo o equilíbrio entre o trabalho no hospital e minha vida pessoal.
+    - Estou me sentindo esgotado e estressado devido ao ambiente desafiador do hospital.
+
     - Estou trabalhando em um ambiente muito estressante ultimamente e estou tendo dificuldades para lidar com a pressão no hospital.
     - Sinto que estou enfrentando muitas demandas no trabalho e isso está me causando um grande estresse no ambiente hospitalar.
     - Tenho me sentido muito ansioso e estressado por causa das longas horas de trabalho no hospital e estou procurando formas de lidar com isso.
