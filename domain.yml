@@ -26,6 +26,7 @@ slots:
       - type: from_intent
         value: "inform_self_stress"
         intent: inform_self_stress
+
   name:
     type: any
     mappings:
