@@ -16,27 +16,26 @@ nlu:
 
 - intent: inform_stress_other
   examples: |
-    - [Laura](name) tem estado sob muita pressão no hospital.
-    - Tenho notado que [Lucas](name) está errando com frequência na dosagem de medicamentos no hospital.
-    - [Mariana](name) está enfrentando muita pressão no hospital.
-    - [Nathalia](name) tem expressado que está se sentindo sobrecarregada no hospital.
-    - [Pedro](name) tem estado lidando com muita pressão no hospital.
-    - Tenho notado que [Rafaela](name) tem cometido alguns erros em seu trabalho no hospital.
-    - [Sara](name) tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital.
-    - [Thiago](name) tem estado enfrentando muita pressão no hospital.
-    - [Vanessa](name) está lidando com muita pressão no hospital.
-    - [William](name) tem estado sob muita pressão no hospital.
-    
-    - [Laura](name) tem estado sob muita pressão no hospital e isso tem levado a erros na medicação dos pacientes.
-    - Tenho notado que [Lucas](name) está errando com frequência na dosagem de medicamentos no hospital.
-    - [Mariana](name) está enfrentando muita pressão no hospital e isso tem levado a erros na documentação dos pacientes.
-    - [Nathalia](name) tem expressado que está se sentindo sobrecarregada no hospital e isso tem levado a erros de comunicação com outros membros da equipe.
-    - [Pedro](name) tem estado lidando com muita pressão no hospital e isso tem levado a erros na interpretação de exames.
-    - Tenho notado que [Rafaela](name) tem cometido alguns erros em seu trabalho no hospital devido ao estresse acumulado.
-    - [Sara](name) tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital e isso tem levado a erros na administração de medicamentos.
-    - [Thiago](name) tem estado enfrentando muita pressão no hospital e isso tem levado a erros na preparação de materiais para cirurgias.
-    - [Vanessa](name) está lidando com muita pressão no hospital e isso tem levado a erros na programação de consultas.
-    - [William](name) tem estado sob muita pressão no hospital e isso tem levado a erros na documentação de históricos médicos dos pacientes.
+    - [Laura]{"entity": "name", "role": "other"} tem estado sob muita pressão no hospital.
+    - Tenho notado que [Lucas]{"entity": "name", "role": "other"} está errando com frequência na dosagem de medicamentos no hospital.
+    - [Mariana]{"entity": "name", "role": "other"} está enfrentando muita pressão no hospital.
+    - [Nathalia]{"entity": "name", "role": "other"} tem expressado que está se sentindo sobrecarregada no hospital.
+    - [Pedro]{"entity": "name", "role": "other"} tem estado lidando com muita pressão no hospital.
+    - Tenho notado que [Rafaela]{"entity": "name", "role": "other"} tem cometido alguns erros em seu trabalho no hospital.
+    - [Sara]{"entity": "name", "role": "other"} tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital.
+    - [Thiago]{"entity": "name", "role": "other"} tem estado enfrentando muita pressão no hospital.
+    - [Vanessa]{"entity": "name", "role": "other"} está lidando com muita pressão no hospital.
+    - [William]{"entity": "name", "role": "other"} tem estado sob muita pressão no hospital.
+    - [Laura]{"entity": "name", "role": "other"} tem estado sob muita pressão no hospital e isso tem levado a erros na medicação dos pacientes.
+    - Tenho notado que [Lucas]{"entity": "name", "role": "other"} está errando com frequência na dosagem de medicamentos no hospital.
+    - [Mariana]{"entity": "name", "role": "other"} está enfrentando muita pressão no hospital e isso tem levado a erros na documentação dos pacientes.
+    - [Nathalia]{"entity": "name", "role": "other"} tem expressado que está se sentindo sobrecarregada no hospital e isso tem levado a erros de comunicação com outros membros da equipe.
+    - [Pedro]{"entity": "name", "role": "other"} tem estado lidando com muita pressão no hospital e isso tem levado a erros na interpretação de exames.
+    - Tenho notado que [Rafaela]{"entity": "name", "role": "other"} tem cometido alguns erros em seu trabalho no hospital devido ao estresse acumulado.
+    - [Sara]{"entity": "name", "role": "other"} tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital e isso tem levado a erros na administração de medicamentos.
+    - [Thiago]{"entity": "name", "role": "other"} tem estado enfrentando muita pressão no hospital e isso tem levado a erros na preparação de materiais para cirurgias.
+    - [Vanessa]{"entity": "name", "role": "other"} está lidando com muita pressão no hospital e isso tem levado a erros na programação de consultas.
+    - [William]{"entity": "name", "role": "other"} tem estado sob muita pressão no hospital e isso tem levado a erros na documentação de históricos médicos dos pacientes.
 
 
 - intent: inform_self_stress
@@ -51,7 +50,6 @@ nlu:
     - Preciso compartilhar com alguém que estou passando por uma fase estressante no ambiente hospitalar.
     - Sinto que estou perdendo o equilíbrio entre o trabalho no hospital e minha vida pessoal.
     - Estou me sentindo esgotado e estressado devido ao ambiente desafiador do hospital.
-
     - Estou trabalhando em um ambiente muito estressante ultimamente e estou tendo dificuldades para lidar com a pressão no hospital.
     - Sinto que estou enfrentando muitas demandas no trabalho e isso está me causando um grande estresse no ambiente hospitalar.
     - Tenho me sentido muito ansioso e estressado por causa das longas horas de trabalho no hospital e estou procurando formas de lidar com isso.
@@ -62,3 +60,21 @@ nlu:
     - Preciso compartilhar com alguém que estou passando por uma fase estressante no ambiente hospitalar e preciso de ajuda para lidar com isso.
     - Sinto que estou perdendo o equilíbrio entre o trabalho no hospital e minha vida pessoal, e isso está me deixando estressado.
     - Estou me sentindo esgotado e estressado devido ao ambiente desafiador do hospital e preciso de ajuda para encontrar formas de lidar com isso.
+
+- intent: inform_self_name
+  examples: |
+    - Meu nome é [heridiotes]{"entity": "name", "role": "self"}.
+    - Pode me chamar de [otto]{"entity": "name", "role": "self"}.
+    - Oi, sou a [Maria]{"entity": "name", "role": "self"}.
+    - Prazer, [thiago]{"entity": "name", "role": "self"} é o meu nome.
+
+- lookup: name
+  examples: |
+    - Alison
+    - Heitor
+    - Michele
+    - Fernanda
+
+- regex: name
+  examples: |
+    - ^[A-Za-z]+$

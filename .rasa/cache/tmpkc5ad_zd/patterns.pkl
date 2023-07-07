@@ -1,0 +1,10 @@
+[
+  {
+    "name": "name",
+    "pattern": "^[A-Za-z]+$"
+  },
+  {
+    "name": "name",
+    "pattern": "(\\bAlison\\b|\\bHeitor\\b|\\bMichele\\b|\\bFernanda\\b)"
+  }
+]

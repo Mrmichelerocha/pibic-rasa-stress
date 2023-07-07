@@ -16,3 +16,8 @@ stories:
   steps:
     - intent: inform_self_stress
     - action: action_call_jason_agent
+
+- story: inform self name
+  steps:
+    - intent: inform_self_name
+    - action: action_call_jason_agent
