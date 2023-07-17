@@ -25,25 +25,3 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
-from transformers import pipeline
-from rasa_sdk import Action
-from rasa_sdk.events import SlotSet
-
-sentiment = pipeline("sentiment-analysis")
-
-def analyze_sentiment(text):
-    
-    sentiment_analysis = sentiment(text)
-    
-    return sentiment_analysis[0]['label']
-
-
-class ActionAnalyzeSentiment(Action):
-    def name(self):
-        return "action_analyze_sentiment"
-
-    def run(self, dispatcher, tracker, domain):
-        text = tracker.latest_message.get("text")
-        sentiment = analyze_sentiment(text)
-
-        return [SlotSet("sentiment", sentiment)]

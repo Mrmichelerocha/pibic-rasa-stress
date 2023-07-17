@@ -4,17 +4,12 @@ intents:
   - call_jason_agent
   - inform_stress_other
   - inform_self_stress
-  - inform_self_name
 
 actions:
   - action_call_jason_agent
-  - action_analyze_sentiment
 
 entities:
-  - name:
-      roles:
-      - other
-      - self
+  - name
 
 slots:
   intentName:
@@ -32,23 +27,12 @@ slots:
         value: "inform_self_stress"
         intent: inform_self_stress
 
-      - type: from_intent
-        value: "inform_self_name"
-        intent: inform_self_name
-
   name:
     type: any
     mappings:
       - type: from_entity
         entity: name
-        role: other
 
-  self:
-    type: any
-    mappings:
-      - type: from_entity
-        entity: name
-        role: self
 
 session_config:
   session_expiration_time: 60
