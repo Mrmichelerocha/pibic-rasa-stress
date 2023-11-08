@@ -16,26 +16,26 @@ nlu:
 
 - intent: inform_stress_other
   examples: |
-    - [Laura](name) tem estado sob muita pressão no hospital.
-    - Tenho notado que [Lucas](name) está errando com frequência na dosagem de medicamentos no hospital.
-    - [Mariana](name) está enfrentando muita pressão no hospital.
-    - [Nathalia](name) tem expressado que está se sentindo sobrecarregada no hospital.
-    - [Pedro](name) tem estado lidando com muita pressão no hospital.
-    - Tenho notado que [Rafaela](name) tem cometido alguns erros em seu trabalho no hospital.
-    - [Sara](name) tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital.
-    - [Thiago](name) tem estado enfrentando muita pressão no hospital.
-    - [Vanessa](name) está lidando com muita pressão no hospital.
-    - [William](name) tem estado sob muita pressão no hospital.
-    - [Laura](name) tem estado sob muita pressão no hospital e isso tem levado a erros na medicação dos pacientes.
-    - Tenho notado que [Lucas](name) está errando com frequência na dosagem de medicamentos no hospital.
-    - [Mariana](name) está enfrentando muita pressão no hospital e isso tem levado a erros na documentação dos pacientes.
-    - [Nathalia](name) tem expressado que está se sentindo sobrecarregada no hospital e isso tem levado a erros de comunicação com outros membros da equipe.
-    - [Pedro](name) tem estado lidando com muita pressão no hospital e isso tem levado a erros na interpretação de exames.
-    - Tenho notado que [Rafaela](name) tem cometido alguns erros em seu trabalho no hospital devido ao estresse acumulado.
-    - [Sara](name) tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital e isso tem levado a erros na administração de medicamentos.
-    - [Thiago](name) tem estado enfrentando muita pressão no hospital e isso tem levado a erros na preparação de materiais para cirurgias.
-    - [Vanessa](name) está lidando com muita pressão no hospital e isso tem levado a erros na programação de consultas.
-    - [William](name) tem estado sob muita pressão no hospital e isso tem levado a erros na documentação de históricos médicos dos pacientes.
+    - [heridiotes](name) tem estado sob muita pressão no hospital.
+    - Tenho notado que [otto](name) está errando com frequência na dosagem de medicamentos no hospital.
+    - [thiago](name) está enfrentando muita pressão no hospital.
+    - [maria](name) tem expressado que está se sentindo sobrecarregada no hospital.
+    - [heridiotes](name) tem estado lidando com muita pressão no hospital.
+    - Tenho notado que [otto](name) tem cometido alguns erros em seu trabalho no hospital.
+    - [thiago](name) tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital.
+    - [maria](name) tem estado enfrentando muita pressão no hospital.
+    - [heridiotes](name) está lidando com muita pressão no hospital.
+    - [otto](name) tem estado sob muita pressão no hospital.
+    - [thiago](name) tem estado sob muita pressão no hospital e isso tem levado a erros na medicação dos pacientes.
+    - Tenho notado que [maria](name) está errando com frequência na dosagem de medicamentos no hospital.
+    - [heridiotes](name) está enfrentando muita pressão no hospital e isso tem levado a erros na documentação dos pacientes.
+    - [otto](name) tem expressado que está se sentindo sobrecarregada no hospital e isso tem levado a erros de comunicação com outros membros da equipe.
+    - [thiago](name) tem estado lidando com muita pressão no hospital e isso tem levado a erros na interpretação de exames.
+    - Tenho notado que [maria](name) tem cometido alguns erros em seu trabalho no hospital devido ao estresse acumulado.
+    - [heridiotes](name) tem expressado que está encontrando dificuldades para lidar com a carga de trabalho no hospital e isso tem levado a erros na administração de medicamentos.
+    - [otto](name) tem estado enfrentando muita pressão no hospital e isso tem levado a erros na preparação de materiais para cirurgias.
+    - [thiago](name) está lidando com muita pressão no hospital e isso tem levado a erros na programação de consultas.
+    - [maria](name) tem estado sob muita pressão no hospital e isso tem levado a erros na documentação de históricos médicos dos pacientes.
 
 
 - intent: inform_self_stress

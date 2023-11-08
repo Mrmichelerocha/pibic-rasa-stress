@@ -1,0 +1,51 @@
+version: "3.1"
+stories:
+- story: happy path 1 (.\rasa-env\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: call_jason_agent: hello there!
+  - action: utter_greet  # predicted: action_call_jason_agent
+  - intent: mood_great  # predicted: call_jason_agent: amazing
+  - action: utter_happy  # predicted: action_call_jason_agent
+- story: happy path 2 (.\rasa-env\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: call_jason_agent: hello there!
+  - action: utter_greet  # predicted: action_call_jason_agent
+  - intent: mood_great  # predicted: call_jason_agent: amazing
+  - action: utter_happy  # predicted: action_call_jason_agent
+  - intent: goodbye  # predicted: call_jason_agent: bye-bye!
+  - action: utter_goodbye  # predicted: action_call_jason_agent
+- story: sad path 1 (.\rasa-env\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: call_jason_agent: hello
+  - action: utter_greet  # predicted: action_call_jason_agent
+  - intent: mood_unhappy  # predicted: call_jason_agent: not good
+  - action: utter_cheer_up  # predicted: action_call_jason_agent
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm  # predicted: call_jason_agent: yes
+  - action: utter_happy  # predicted: action_call_jason_agent
+- story: sad path 2 (.\rasa-env\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: call_jason_agent: hello
+  - action: utter_greet  # predicted: action_call_jason_agent
+  - intent: mood_unhappy  # predicted: call_jason_agent: not good
+  - action: utter_cheer_up  # predicted: action_call_jason_agent
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: call_jason_agent: not really
+  - action: utter_goodbye  # predicted: action_call_jason_agent
+- story: sad path 3 (.\rasa-env\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: call_jason_agent: hi
+  - action: utter_greet  # predicted: action_call_jason_agent
+  - intent: mood_unhappy  # predicted: inform_stress_other: very terrible
+  - action: utter_cheer_up  # predicted: action_call_jason_agent
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: inform_stress_other: no
+  - action: utter_goodbye  # predicted: action_call_jason_agent
+- story: say goodbye (.\rasa-env\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: call_jason_agent: bye-bye!
+  - action: utter_goodbye  # predicted: action_call_jason_agent
+- story: bot challenge (.\rasa-env\Lib\site-packages\rasa\cli\initial_project\tests\test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: call_jason_agent: are you a bot?
+  - action: utter_iamabot  # predicted: action_call_jason_agent
